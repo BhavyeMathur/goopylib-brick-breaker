@@ -62,6 +62,7 @@ public:
     float m_yVel = 0;
 };
 
+// TODO fix error caused by inheriting from gp::Rectangle which leaves its virtual base (Quad) uninitialised
 class Controller : public gp::Rectangle {
 public:
     Controller() : gp::Rectangle({0, -220}, 120, 15) {
