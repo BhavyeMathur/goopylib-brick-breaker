@@ -1,1 +1,1 @@
-goopylib>=2.0.0b0
+goopylib~=2.1.0

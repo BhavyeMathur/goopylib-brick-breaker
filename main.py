@@ -10,7 +10,7 @@ class Brick(gp.Rectangle):
 
     def __init__(self, i, j):
         super().__init__((i * self.width - 450 + self.width / 2, j * self.height + 85), self.width, self.height)
-        self.set_color((255 - j * 20, 255 - j * 20, 255 - j * 20))
+        self.set_color(255 - j * 20, 255 - j * 20, 255 - j * 20)
 
         self.hits = 0
 
@@ -22,7 +22,7 @@ class Brick(gp.Rectangle):
 class Ball(gp.Circle):
     def __init__(self):
         super().__init__((-250, 20), 7)
-        self.set_color((255, 150, 150))
+        self.set_color(255, 150, 150)
 
         self.velx = 0
         self.vely = 0
@@ -55,7 +55,7 @@ class Controller(gp.Rectangle):
 
     def __init__(self):
         super().__init__((0, -220), 120, 15)
-        self.set_color((255, 255, 255))
+        self.set_color(255, 255, 255)
         self.velx = 0
 
     def update(self):
